@@ -1,6 +1,6 @@
 # DDS-PEP
 
-Version 2.0.2 — 28 October 2026.
+Version 2.0.3 - 31 October 2026.
 
 [Open DDS-PEP](https://dannyscholten.github.io/DDS-PEP/)
 
@@ -13,6 +13,19 @@ This replaces the separate PEP-builder and PEP-approval tools.
 Download index.html and open it in a browser. Planning data is stored in your browser; use Save build to keep a portable copy. Only files saved by the integrated DDS-PEP can be reopened with Open build. Files from the earlier separate Builder and Approval tools are not supported.
 
 The source archive contains the readable HTML, CSS, JavaScript, curriculum data and third-party licence notices. Extract it, then run `python3 src/build.py` to reproduce the standalone HTML in outputs/. No private student plans are included.
+
+## Changes in 2.0.3
+
+- Strict cohort-aware import validation and shared export checks. Catalogue attributes are reconstructed from the catalogue; unlisted courses require permitted levels and a public HTTP/HTTPS syllabus URL.
+- Exception requests require a justification, remain pending a decision and require reconfirmation after relevant curriculum changes.
+- Consistent Action required, Decision required and Planning advice labels; softer warning and curriculum-check colours in the tool and PDFs.
+- Compact full-year calendar on narrow screens, chronological course ordering and uniform readable course-name sizes; smaller full-calendar typography.
+- Live calendar dragging with validated snap targets. Automatic drag advice appears after one second, once per course in the current browser session, and remains in the advice panel.
+- Acknowledge individual Planning advice messages to collapse them to their title. Reopen by clicking the title; acknowledgement does not bypass requirements or remove PDF warnings.
+- C1 period warning markers in the web calendar and planning PDF replace the separate workload row. Planning PDFs carry a red personal-use-only notice on every page.
+- Full calendars use Period 1 to Period 6; compact calendars retain P1 to P6. Normal dashes replace middle-dot separators.
+- Persistent advice for first-year courses placed in Year 2; student-facing unlisted-course review notices; clarified extracurricular wording.
+- Calendar-only extracurricular summary removed; List information and credit accounting retained. Mobile catalogue controls and scrolling refined.
 
 ## Changes in 2.0.2
 
