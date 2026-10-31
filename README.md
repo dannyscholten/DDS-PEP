@@ -1,6 +1,6 @@
 # DDS-PEP
 
-Version 2.0.3 - 31 October 2026.
+Version 2.0.4 - 31 October 2026.
 
 [Open DDS-PEP](https://dannyscholten.github.io/DDS-PEP/)
 
@@ -13,6 +13,11 @@ This replaces the separate PEP-builder and PEP-approval tools.
 Download index.html and open it in a browser. Planning data is stored in your browser; use Save build to keep a portable copy. Only files saved by the integrated DDS-PEP can be reopened with Open build. Files from the earlier separate Builder and Approval tools are not supported.
 
 The source archive contains the readable HTML, CSS, JavaScript, curriculum data and third-party licence notices. Extract it, then run `python3 src/build.py` to reproduce the standalone HTML in outputs/. No private student plans are included.
+
+## Changes in 2.0.4
+
+- List and Approval curriculum tables use Course, or Project for major and minor research projects.
+- List timing headings read Year & period(s); the action column is labelled Actions.
 
 ## Changes in 2.0.3
 
